@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat&display=swap');
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+*{
+    font-family: "Montserrat";
+    margin: 0%;
+    padding: 0%;
+}
+
+#body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  hsl(30, 38%, 92%);
+    width: 100%;
+    height: 100vh;
+}
+
+.container--main{
+    display: flex;
+    background-color: #fff;
+    width: 40rem;
+    height: 30rem;
+    border-radius: 17px;
+    margin: 1rem;
+}
+
+
+.img--left{
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 17px;
+    border-top-left-radius: 17px;
+} 
+
+.left{
+    width: 50%;
+}
+/* in questo modo andiamo a dividere il container principale in due parti ugali. */ 
+/* in this way we are going to divide the main container into two equal parts. */
+.right{
+    width: 50%;
+}
+
+
+.container--right{
+    display: flex;
+    flex-direction: column;   /* in questo modo andiamo a disporre tutti gli elementi uno sotto l'altro. */  /* in this way we are going to arrange all the elements one below the other. */ 
+    margin: 20px 20px;
+}
+
+.container--right p{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.1rem;
+    line-height: 1.6;
+}
+
+.container--right h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 20px;
+    color: hsl(158, 36%, 37%)
+}
+
+.container--right #subtitle{
+    margin-top: 10px;
+    font-size:  14px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 400;
+
+}
+
+.prezzi h2{
+    color: hsl(158, 36%, 37%);
+}
+
+.prezzi h4{
+    margin-left: 7rem;
+    margin-top: -1.5rem;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-size: .9rem;
+}
+
+
+.button{
+    display: flex;
+    justify-content: center;
+    padding: 15px 15px;
+    background: hsl(158, 36%, 37%) ;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 2.5rem;
+}
+
+.button svg{
+    margin-right: 20px;
+}
+
+
+@media only screen and (max-width: 650px){
+
+
+    .right{
+        display: flex;
+        border-radius: 15px;
+        background: #fff;
+        width: 21.5rem ;
+    }
+    .container--main{
+        display: flex;
+        flex-direction: column;
+        width: 21.5rem;
+        height: 40.5rem;
+    }
+
+    .left{
+        width: 100%;
+        height: 50%;
+        background-image: url(./image/img-left.jpg);
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .left img{
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .container--right h2{
+        color: #000;
+    }
+        
+    .button{
+        background: #000;
+    }
+
+    #body{
+        width: 100%;
+    }
+}
+
+    
+
+    
